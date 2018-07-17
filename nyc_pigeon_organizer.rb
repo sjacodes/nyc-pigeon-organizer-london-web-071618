@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
     end
     data.each do |category, characteristics|
       characteristics.each do |characteristic, names_array|
-        data[category][characteristic].each do |name|
+        data[category][characteristics].each do |name|
           new_hash[name][category].push(characteristic.to_s)
         end
       end
